@@ -1,342 +1,62 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TechPaisa</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TechPaisa | Hindi Ka #1 Tech Blog</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:auto;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-/* NAVBAR */
-
-nav{
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#111827;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.logo{
-font-size:28px;
-font-weight:700;
-color:#38bdf8;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-transition:0.3s;
-}
-
-nav ul li a:hover{
-color:#38bdf8;
-}
-
-/* HERO SECTION */
-
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px 20px;
-}
-
-.hero-content h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero-content h1 span{
-color:#38bdf8;
-}
-
-.hero-content p{
-max-width:700px;
-margin:auto;
-line-height:1.8;
-color:#cbd5e1;
-font-size:18px;
-}
-
-/* BUTTON */
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#38bdf8;
-color:black;
-font-weight:600;
-border-radius:12px;
-text-decoration:none;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:scale(1.08);
-background:white;
-}
-
-/* SECTION */
-
-.section{
-padding:80px 8%;
-}
-
-.section-title{
-text-align:center;
-font-size:42px;
-margin-bottom:50px;
-}
-
-/* CARDS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-background:#334155;
-}
-
-.card h3{
-margin-bottom:15px;
-color:#38bdf8;
-}
-
-/* ABOUT */
-
-.about{
-text-align:center;
-line-height:1.8;
-color:#cbd5e1;
-max-width:800px;
-margin:auto;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.contact input,
-.contact textarea{
-width:100%;
-max-width:600px;
-padding:15px;
-margin:10px 0;
-border:none;
-border-radius:10px;
-outline:none;
-}
-
-.contact button{
-padding:15px 35px;
-border:none;
-background:#38bdf8;
-border-radius:10px;
-font-weight:600;
-cursor:pointer;
-}
-
-/* FOOTER */
-
-footer{
-background:#111827;
-text-align:center;
-padding:25px;
-margin-top:50px;
-color:#94a3b8;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-nav{
-flex-direction:column;
-gap:15px;
-}
-
-nav ul{
-gap:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero-content h1{
-font-size:38px;
-}
-
-.hero-content p{
-font-size:16px;
-}
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#0d0d14;color:#e2e2f0;font-family:Arial,sans-serif;}
+nav{background:#13131f;padding:1rem 4%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #222;}
+.logo{font-size:1.5rem;font-weight:800;color:#00c6ff;}
+.logo span{color:#ffc107;}
+.hero{padding:4rem 4%;text-align:center;}
+.hero h1{font-size:2.5rem;font-weight:800;margin-bottom:1rem;}
+.hero h1 span{color:#00c6ff;}
+.hero p{color:#7a7a9a;font-size:1.1rem;margin-bottom:2rem;}
+.btn{background:#00c6ff;color:#000;padding:0.8rem 2rem;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;}
+.cats{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;padding:2rem 4%;}
+.cat{background:#1a1a2e;border:1px solid #222;border-radius:12px;padding:1.5rem 2rem;text-align:center;min-width:150px;}
+.cat div{font-size:2rem;margin-bottom:0.5rem;}
+.cat p{font-weight:700;}
+.articles{padding:2rem 4%;}
+.articles h2{font-size:1.5rem;font-weight:800;margin-bottom:1.5rem;color:#00c6ff;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;}
+.card{background:#1a1a2e;border:1px solid #222;border-radius:14px;padding:1.5rem;}
+.card span{font-size:2rem;}
+.card h3{font-size:1rem;font-weight:700;margin:0.8rem 0 0.5rem;}
+.card p{color:#7a7a9a;font-size:0.85rem;}
+footer{background:#13131f;text-align:center;padding:2rem;color:#7a7a9a;border-top:1px solid #222;margin-top:3rem;}
 </style>
 </head>
-
 <body>
-
-<!-- NAVBAR -->
-
 <nav>
-
-<div class="logo">TechPaisa</div>
-
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#learn">Learn</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
+<div class="logo">Tech<span>Paisa</span></div>
+<div>Hindi Blog</div>
 </nav>
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>Welcome To <span>TechPaisa</span></h1>
-
-<p>
-Learn AI tools, YouTube growth, online earning,
-video editing and smart tech tricks.
-</p>
-
-<a href="#learn" class="btn">Explore Now</a>
-
+<div class="hero">
+<h1>Hindi Ka <span>#1 Tech</span> & Earning Blog</h1>
+<p>AI Tools, YouTube, Instagram aur Health Tips — sab Hindi mein!</p>
+<a href="#" class="btn">Articles Padhein</a>
 </div>
-
-</section>
-
-<!-- LEARN SECTION -->
-
-<section class="section" id="learn">
-
-<h2 class="section-title">What You Will Learn</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>AI Tools</h3>
-<p>Best AI tools for videos and photos.</p>
+<div class="cats">
+<div class="cat"><div>🤖</div><p>AI Tools</p></div>
+<div class="cat"><div>📺</div><p>YouTube</p></div>
+<div class="cat"><div>📱</div><p>Instagram</p></div>
+<div class="cat"><div>💊</div><p>Health</p></div>
+<div class="cat"><div>💰</div><p>Paise Kamao</p></div>
 </div>
-
-<div class="card">
-<h3>YouTube Growth</h3>
-<p>Learn thumbnails and viral video tricks.</p>
+<div class="articles">
+<h2>🔥 Latest Articles</h2>
+<div class="grid">
+<div class="card"><span>🤖</span><h3>ChatGPT Se Paise Kaise Kamaye</h3><p>AI tools se ghar baithe income banao — complete guide</p></div>
+<div class="card"><span>📺</span><h3>YouTube Channel Kaise Banaye</h3><p>Bina face dikhaye channel banao aur monetize karo</p></div>
+<div class="card"><span>💊</span><h3>7 Din Mein Pet Kam Karo</h3><p>Simple diet tips jo actually kaam karti hain</p></div>
+<div class="card"><span>📱</span><h3>Instagram Reels Viral Karo</h3><p>2026 algorithm secret — 1 lakh views guarantee</p></div>
+<div class="card"><span>💰</span><h3>Fiverr Se Paise Kamao</h3><p>Pehla order kaise laye — step by step guide</p></div>
+<div class="card"><span>🧠</span><h3>Top 10 Free AI Tools 2026</h3><p>Ye tools aapki zindagi aasaan kar denge</p></div>
 </div>
-
-<div class="card">
-<h3>Online Earning</h3>
-<p>Simple ways to earn money online.</p>
 </div>
-
-<div class="card">
-<h3>Tech Tips</h3>
-<p>Useful apps and websites for daily use.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="section" id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="about">
-
-<p>
-TechPaisa is a platform where you can learn
-AI tools, online earning, YouTube growth,
-video editing and modern technology.
-</p>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section" id="contact">
-
-<h2 class="section-title">Contact Me</h2>
-
-<div class="contact">
-
-<input type="text" placeholder="Your Name">
-
-<br>
-
-<input type="email" placeholder="Your Email">
-
-<br>
-
-<textarea rows="5" placeholder="Your Message"></textarea>
-
-<br>
-
-<button>Send Message</button>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-© 2026 TechPaisa | All Rights Reserved
-
-</footer>
-
+<footer>© 2026 TechPaisa.com — India Ke Liye Hindi Mein ❤️</footer>
 </body>
 </html>
